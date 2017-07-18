@@ -26,6 +26,13 @@ router.get('/', (req, res) => {
 });
 
 app.use('/api',apiUsers(router,db));
+app.use("/static", express.static(__dirname + '/assets'));
+app.use("/static", express.static(__dirname + '/node_modules'));
+app.use("/static", express.static(__dirname + '/public'));
+
+app.get("/",(req,res)=>{
+  res.sendFile(__dirname+"/index.html")
+});
 
 const port = process.env.PORT || 3000;
 
