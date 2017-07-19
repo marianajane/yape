@@ -1,3 +1,7 @@
-.carousel__height  {
+.carousel.carousel-slider {
 	height: 500px;
+}
+
+.green-txt {
+	color: #4dd0e1;
 }
