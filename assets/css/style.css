@@ -1,7 +1,11 @@
 .carousel.carousel-slider {
-	height: 500px;
+	height: 450px;
 }
 
 .green-txt {
 	color: #4dd0e1;
+}
+
+.top {
+	margin-top: 10vh
 }
