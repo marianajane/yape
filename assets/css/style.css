@@ -2,14 +2,47 @@
 	height: 450px;
 }
 
+.morado-light {
+	background-color: #451e36;
+}
+
+.morado-dark {
+	background-color: #38052a;
+}
+
 .green-txt {
-	color: #4dd0e1;
+	color: #00c3a3;
+}
+
+.white-txt {
+	color: white;
+}
+
+.little-top {
+	margin-top: 2vh;
+}
+
+.bottom {
+	bottom: 0;
 }
 
 .top {
-	margin-top: 10vh
+	margin-top: 5vh;
+}
+
+.no-margin {
+	margin: 0;
 }
 
 .middle-element {
 	margin-top: 20vh;
+}
+
+.medium-size {
+	font-size: 1.2em;
+}
+
+
+.big-size {
+	font-size: 2.5em;
 }

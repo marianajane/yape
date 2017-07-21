@@ -20,30 +20,27 @@
 					<h5><strong>Para comenzar validemos tu número</strong></h5>
 					<p>Recibiràs un SMS con un código de validación</p>
 				</div>
-				<div class="col s12">
-					<form id="phone_form">
-				        <div class="row">
-				        	<div class="input-field col s12">
-					        	<i class="material-icons prefix">phone</i>
-					          	<input id="telephone_number" type="tel" class="validate" name="phone" pattern="[0-9]{10}" required>
-					          	<label for="icon_telephone">Telephone</label>
-				          	</div>
-				        </div>
-				        <div class="row">
-				        	<div class="input-field col s12">
-				            	<p class="center-align">
-				              	<input type="checkbox" class="filled-in" id="check"/>
-				              	<label for="check" id="terms">Acepto los <a href="">Términos y condiciones</a></label>
-				            	</p>
-				         	</div>
-				       	</div>
-				       	<div class="row">
-				        	<button class="btn waves-effect white-text yellow center-align col s8 offset-s2" id="continue" disabled><a href="2codigo.html">REGISTRARME</a></button>
-				       	</div>
-				    </form>	
+				<div class="offset-s1 col s10">
+					<form id="phone-form">		
+						<div class="input-field">
+							<input id="telephone_number" type="tel" name="phone" pattern="[0-9]{10}" required">
+							<label for="telephone_number"><img width="50" src="../../static/img/icons/phoneandnumber.png"></label>
+						</div>
+						<div class="input field col s12">
+							<input type="checkbox" id="check" />
+      						<label for="check" id="aceptar"></label>
+							<label>Acepto los <a href="" class="green-txt">Términos y condiciones</a></label>
+						</div>
+						<div class="offset-s1 col s10">
+							<p class="col s 12">Reintentar en <span><img width="20" src="../../static/img/icons/clock.png">21</span></p>
+						<br>
+							<button class="btn waves-effect white-text yellow" id="continue" disabled><a class="white-text" href="2_codigo.html">Continuar</a></button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<script src="../../static/jquery/dist/jquery.min.js" type="text/javascript"></script>
 	<script src="../../static/js/main.js" type="text/javascript"></script>

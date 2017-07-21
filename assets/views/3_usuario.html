@@ -21,26 +21,31 @@
 					<p>Ingresa un nombre, email y clave de usuario</p>
 				</div>
 				<div class="col s12">
-					<form action="phone_number">
+					<form action="formValidate">
 						<div class="input-field">
-				          <input id="name" type="text" class="validate" placeholder="Nombre">
-				          <input id="email" type="text" class="validate" placeholder="correo@ejemplo.com">
-				          <input id="clave" type="text" class="validate" placeholder="Ingresa clave de 6 digitos">  
-				        </div>
-					    <span>
-					    </span>
-					    <span>Cuida esta clave como oro, es tu accseo a Yape</a></span>
+					        <label for="nombre" data-error="wrong" data-success="right"><img width="20" src="../../static/img/icons/user.png"></label>
+	          				<input id="nombre" name="example" type="text" class="validate" required="" aria-required="true" placeholder="Nombre">
+	          			</div>
+	          			<div class="input-field">
+					        <label for="email" data-error="wrong" data-success="right"><img width="20" src="../../static/img/icons/message-gray.png"></label>
+	          				<input id="email" type="email" class="validate" required="" aria-required="true" placeholder="correo@ejemplo.com">
+	          			</div>
+	          			<div class="input-field">  
+							<label for="clave"><img width="15" src="../../static/img/icons/lock.png"></label>
+	          				<input id="clave" type="password" class="validate" placeholder="Ingresa clave de 6 digitos">
+	          			</div>
+						<div class="col s12">
+							<span>Cuida esta clave como oro, es tu acceso a Yape</span>
+							<br><br>
+							<button class="btn waves-effect white-text yellow" id="count"><a class="white-text" href="4_perfil.html">CREAR CUENTA</a></button>
+						</div>
 					</form>
 				</div>
 			</div>
 		</div>
-		<br>
-		<div class="carousel-fixed-item center">
-			<a class="btn waves-effect white-text yellow accent-4 disabled" href="#" onclick="continuarregistro()">CREAR CUENTA</a>
-		</div>
 	</div>
 	<script src="../../static/jquery/dist/jquery.min.js" type="text/javascript"></script>
-	<script src="../../static/js/app.js" type="text/javascript"></script>
+	<script src="../../static/js/perfil-form.js" type="text/javascript"></script>
 	<script src="../../static/materialize-css/dist/js/materialize.min.js" type="text/javascript"></script>
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>-->
