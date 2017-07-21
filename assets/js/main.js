@@ -1,3 +1,4 @@
+var url =  "http://localhost:3000/api/registerNumber";
 var $telefono = $("#telephone_number");
 var $check = $("#check");
 var $boton = $("#continue");
@@ -22,20 +23,7 @@ var disabled = function(){
 }
 
 
-/*var screen_splash = function () {
-     $('#index').load('2_codigo.html');
-        setTimeout(function() {
-            $('#index').ready(function() {
-                $('#splash').remove();
-                window.location.href = "2_codigo.html";
-            });
-        }, 2000);
-}*/
-/*var cargarPagina = function () {
-    $('#phone-form').submit(validarAcceso);  
-    //$("input#icon_telephone").characterCounter();    
-};
-
+/*
 var validarAcceso = function(){
 
  if($check.is(":checked") && $telefono.val().length === 10 ){
@@ -53,6 +41,15 @@ var validarAcceso = function(){
 
 //Validar API 
 var url =  "http://localhost:3000/api/registerNumber";
+
+$post("http://localhost:3000/api/registerNumber" {
+   "phone": "5561184852",
+   "terms": true
+}).then (function (response) {
+    console.log(response)
+}).catch (function (error){
+    console.log(error)
+});
 */
 $(document).ready(cargarPagina);
 
